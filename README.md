@@ -1,6 +1,6 @@
 # Minecraft Avatar Generator 🛠️
 
-A Python-based desktop application designed to create stylized pixel-art avatars (37x37) from Minecraft skins. The program automatically processes skin layers, adds a clean 1px outline, and applies shadows while maintaining perfect pixel clarity.
+A Python-based desktop application designed to create stylized pixel-art avatars (38x38) from Minecraft skins. The program automatically processes skin layers, adds a clean 1px outline, and applies shadows while maintaining perfect pixel clarity.
 
 ## Key Features
 - **Pixel-Art Rendering**: Manual upscaling using the NEAREST filter to ensure zero blur in previews.
@@ -12,7 +12,7 @@ A Python-based desktop application designed to create stylized pixel-art avatars
 
 ### 1. Install Dependencies
 ```bash
-pip install customtkinter pillow pyinstaller
+pip install customtkinter pillow pyinstaller requests
 ```
 ### 2. Run the Script
 ```bash
@@ -22,5 +22,5 @@ python avatar_maker.py
 To create a standalone Windows application, use the following command:
 
 ```bash
-pyinstaller --noconsole --onefile --icon=app.ico make_avatar.py
+pyinstaller --noconsole --onefile --icon=app.ico avatar_maker.py
 ```
